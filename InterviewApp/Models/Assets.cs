@@ -10,5 +10,10 @@ namespace InterviewApp.Models
     {
         public int AssetId;
         public List<WorkOrders> WorkOrdersList;
+
+        public override string ToString()
+        {
+            return "Asset: " + AssetId + " WorkOrders: " + string.Join(",", WorkOrdersList.Select(d=> d.ToString()));
+        }
     }
 }

@@ -10,7 +10,11 @@ namespace InterviewApp.Models
     {
         public int WorkOrderId;
         public int AssetId;
-        public TimeSpan HowLongWeWorked;
-        public string WhoWorkedOnIt;
+
+
+        public override string ToString()
+        {
+            return "WorkOrder: " + AssetId;
+        }
     }
 }

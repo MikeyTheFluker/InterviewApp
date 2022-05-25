@@ -8,6 +8,6 @@ public class Program
     {
         var workOrdersBuilder = new WorkOrderGetter(new DatabaseReader());
         var asset = workOrdersBuilder.ShowMeAssetOneAndItsWorkOrders(); 
-        Debug.WriteLine(asset);
+        Console.WriteLine(asset);
     }
 }
